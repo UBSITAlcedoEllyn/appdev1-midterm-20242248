@@ -20,21 +20,19 @@
 }
 
 .btn-back {
-  background-color: #6c757d;
+   background-color: #ff9500;
   border: none;
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   padding: 0.4rem 1rem;
   border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 
 .btn-back:hover {
-  background-color: #5a6268;
+  background-color: #02ff63b7;
 }
 
-.btn-edit {
+.btn-edit, .btn-bac {
   background-color: #ff9500;
   border: none;
   color: #000000;
@@ -44,7 +42,7 @@
 }
 
 .btn-edit:hover {
-  background-color: #ec9c3a;
+  background-color: #02ff63b7;
 }
 
 .text-error {
