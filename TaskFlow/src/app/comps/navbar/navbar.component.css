@@ -1,0 +1,33 @@
+.custom-navbar {
+  background-color: #0b3d0b;
+  padding: 0.5rem 1rem;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #a8d5ba;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.btn-add-task, .navbar-home {
+  background-color: #2e7d32;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-add-task:hover {
+  background-color: #1b5e20;
+}
