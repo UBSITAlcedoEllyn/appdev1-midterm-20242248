@@ -9,7 +9,8 @@ import { Task } from '../../models/task.model';
   selector: 'app-task-edit',
   standalone: true,
   imports: [CommonModule, FormsModule, RouterModule],
-  templateUrl: './task-edit.component.html'
+  templateUrl: './task-edit.component.html',
+  styleUrl: './task-edit.component.css'
 })
 
 export class TaskEditComponent {

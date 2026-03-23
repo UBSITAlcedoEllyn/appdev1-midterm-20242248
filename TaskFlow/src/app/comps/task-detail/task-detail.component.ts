@@ -8,7 +8,8 @@ import { Task } from '../../models/task.model';
   selector: 'app-task-detail',
   standalone: true,
   imports: [CommonModule, RouterModule, RouterOutlet],
-  templateUrl: './task-detail.component.html'
+  templateUrl: './task-detail.component.html',
+  styleUrl: './task-detail.component.css'
 })
 
 export class TaskDetailComponent implements OnInit {

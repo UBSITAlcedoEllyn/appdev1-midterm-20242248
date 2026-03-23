@@ -1,0 +1,63 @@
+.edit-task-container {
+  background-color: #0b3d0b;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 2rem auto;
+  color: #a8d5ba;
+  font-family: Arial, sans-serif;
+}
+
+.edit-task-container h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 0.75rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #2e7d32;
+  border-radius: 4px;
+  background-color: #144d14;
+  color: #e0f2e9;
+}
+
+.form-control::placeholder {
+  color: #c1e1c1;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #a8d5ba;
+  box-shadow: 0 0 5px #a8d5ba;
+  background-color: #155115;
+}
+
+.btn-update {
+  background-color: #2e7d32;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn-update:hover {
+  background-color: #1b5e20;
+}
+
+.text-error {
+  color: #ff6b6b;
+}

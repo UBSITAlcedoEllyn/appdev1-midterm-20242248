@@ -1,8 +1,14 @@
-<h3>Task Detail</h3>
-<ng-container *ngIf="task; else noTask">
-  <a [routerLink]="['edit']" class="btn btn-warning mb-2">Edit</a>
-</ng-container>
-<ng-template #noTask>
-  <p class="text-danger">Task not found.</p>
-</ng-template>
-<router-outlet></router-outlet>
+<div class="task-detail-container">
+  <h3>Task Detail</h3>
+  <ng-container *ngIf="task; else noTask">
+    <div class="task-detail-buttons">
+      <a routerLink="/" class="btn btn-back">Back to List</a>
+      <a [routerLink]="['edit']" class="btn btn-edit">Edit</a>
+    </div>
+  </ng-container>
+  <ng-template #noTask>
+    <p class="text-error">Task not found.</p>
+  </ng-template>
+
+  <router-outlet></router-outlet>
+</div>

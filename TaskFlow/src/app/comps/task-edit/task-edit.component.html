@@ -1,40 +1,42 @@
-<h4>Edit Task</h4>
-<form *ngIf="task; else noTask" (ngSubmit)="save()">
-  <div class="mb-3">
-    <label for="title" class="form-label">Title</label>
-    <input [(ngModel)]="task.title" name="title" id="title" class="form-control" />
-  </div>
+<div class="edit-task-container">
+  <h4>Edit Task</h4>
+  <form *ngIf="task; else noTask" (ngSubmit)="save()">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input [(ngModel)]="task.title" name="title" id="title" class="form-control" />
+    </div>
 
-  <div class="mb-3">
-    <label for="description" class="form-label">Description</label>
-    <textarea [(ngModel)]="task.description" name="description" id="description" class="form-control" rows="3"></textarea>
-  </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea [(ngModel)]="task.description" name="description" id="description" class="form-control" rows="3"></textarea>
+    </div>
 
-  <div class="mb-3">
-    <label for="dueDate" class="form-label">Due Date</label>
-    <input [(ngModel)]="task.dueDate" name="dueDate" id="dueDate" type="date" class="form-control" />
-  </div>
+    <div class="form-group">
+      <label for="dueDate">Due Date</label>
+      <input [(ngModel)]="task.dueDate" name="dueDate" id="dueDate" type="date" class="form-control" />
+    </div>
 
-  <div class="mb-3">
-    <label for="status" class="form-label">Status</label>
-    <select [(ngModel)]="task.status" name="status" id="status" class="form-control">
-      <option value="Pending">Pending</option>
-      <option value="In Progress">In Progress</option>
-      <option value="Completed">Completed</option>
-    </select>
-  </div>
+    <div class="form-group">
+      <label for="status">Status</label>
+      <select [(ngModel)]="task.status" name="status" id="status" class="form-control">
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+      </select>
+    </div>
 
-  <div class="mb-3">
-    <label for="priority" class="form-label">Priority</label>
-    <select [(ngModel)]="task.priority" name="priority" id="priority" class="form-control">
-      <option value="Low">Low</option>
-      <option value="Medium">Medium</option>
-      <option value="High">High</option>
-    </select>
-  </div>
+    <div class="form-group">
+      <label for="priority">Priority</label>
+      <select [(ngModel)]="task.priority" name="priority" id="priority" class="form-control">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </div>
 
-  <button type="submit" class="btn btn-primary">Update</button>
-</form>
-<ng-template #noTask>
-  <p class="text-danger">Task not found for editing.</p>
-</ng-template>
+    <button type="submit" class="btn btn-update">Update</button>
+  </form>
+  <ng-template #noTask>
+    <p class="text-error">Task not found for editing.</p>
+  </ng-template>
+</div>
