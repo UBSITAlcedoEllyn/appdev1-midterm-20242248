@@ -7,6 +7,7 @@ import { TaskService } from '../../services/task.service';
   selector: 'app-task-edit',
   standalone: true,
   imports: [FormsModule],
+  templateUrl: './task-edit.component.html'
 })
 
 export class TaskEditComponent {
