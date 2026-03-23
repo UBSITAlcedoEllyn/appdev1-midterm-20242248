@@ -1,1 +1,6 @@
-<p>task-edit works!</p>
+<h4>Edit Task</h4>
+<form *ngIf="task" (ngSubmit)="save()">
+<input [(ngModel)]="task.title" name="title" class="form-control mb-2">
+<textarea [(ngModel)]="task.description" name="desc" class="form-control mb-2"></textarea>
+<button class="btn btn-primary">Update</button>
+</form>
