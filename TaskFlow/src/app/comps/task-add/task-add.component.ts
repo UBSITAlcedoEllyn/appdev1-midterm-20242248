@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
   selector: 'app-task-add',
   standalone: true,
   imports: [FormsModule],
-  templateUrl: './task-add.component.html'
+  templateUrl: './task-add.component.html',
+  styleUrl: './task-add.component.css'
 })
 
 export class TaskAddComponent {

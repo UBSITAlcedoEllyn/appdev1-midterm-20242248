@@ -1,17 +1,19 @@
-<h2>Add Task</h2>
-<form (ngSubmit)="submit()">
-<input [(ngModel)]="task.title" name="title" class="form-control mb-2" placeholder="Title" required>
-<textarea [(ngModel)]="task.description" name="desc" class="form-control mb-2"></textarea>
-<input type="date" [(ngModel)]="task.dueDate" name="date" class="form-control mb-2">
-  <select [(ngModel)]="task.status" name="status" class="form-control mb-2">
-    <option>Pending</option>
-    <option>In Progress</option>
-    <option>Completed</option>
-  </select>
-  <select [(ngModel)]="task.priority" name="priority" class="form-control mb-2">
-    <option>Low</option>
-    <option>Medium</option>
-    <option>High</option>
-  </select>
-  <button class="btn btn-success">Save</button>
-</form>
+<div class="form-container">
+  <h2>Add Task</h2>
+  <form (ngSubmit)="submit()">
+    <input [(ngModel)]="task.title" name="title" class="form-control" placeholder="Title" required>
+    <textarea [(ngModel)]="task.description" name="desc" class="form-control" placeholder="Description"></textarea>
+    <input type="date" [(ngModel)]="task.dueDate" name="date" class="form-control">
+    <select [(ngModel)]="task.status" name="status" class="form-control">
+      <option>Pending</option>
+      <option>In Progress</option>
+      <option>Completed</option>
+    </select>
+    <select [(ngModel)]="task.priority" name="priority" class="form-control">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+    <button class="btn btn-save">Save</button>
+  </form>
+</div>
